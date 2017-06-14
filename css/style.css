@@ -1,59 +1,69 @@
 * {
-  font-family: Georgia, serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: #401F68
 }
 
-body {
-  margin:0;
+/********** Header Styling **********/
+header {
+  border-bottom: 1px solid #401F68;
 }
 
-/***** Navigation Menu *****/
-nav ul {
+header h1 {
+  text-align: center;
+}
+
+/***** Header Navigation Bar *****/
+header nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
+  width: 800px;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white;
+  background-color: white;
   text-align: center;
+}
+
+header nav li {
+  float: left;
+  width: 200px;
+}
+
+header nav li:hover {
+  background-color: #E4E0EE;
+}
+
+header nav li a {
+  display: inline-block;
   padding: 1em;
   text-decoration: none;
-  font-size: 17px;
 }
 
-nav li a:hover {
-  background-color: #111;
+header nav li a i {
+  font-size: 2.5em;
+  vertical-align: middle;
 }
 
-nav li.icon{
+header .dropmenu .dropcontent {
   display: none;
+  position: absolute;
+  background-color: #E4E0EE;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-@media screen and (max-resolution: 1dppx) {
-  nav li:not(:first-child) {display: none;}
-  nav li.icon {
-    float: right;
-    display: block;
-  }
+header .dropmenu:hover .dropcontent {
+  display: block;
 }
 
-@media screen and (max-resolution:1dppx) {
-  nav.responsive {position: relative;}
-  nav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+header .dropmenu .dropcontent a {
+  float: none;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+}
+
+header .dropmenu .dropcontent li:hover {
+  background-color: #B6ACD1;
 }
