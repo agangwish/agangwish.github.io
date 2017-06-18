@@ -14,7 +14,7 @@ header h1 {
 }
 
 /***** Header Navigation Bar *****/
-header nav ul {
+header ul {
   list-style-type: none;
   margin: 0 auto;
   width: 800px;
@@ -24,22 +24,22 @@ header nav ul {
   text-align: center;
 }
 
-header nav li {
+header li {
   float: left;
   width: 200px;
 }
 
-header nav li:hover {
+header li:hover {
   background-color: #E4E0EE;
 }
 
-header nav li a {
+header li a {
   display: inline-block;
   padding: 1em;
   text-decoration: none;
 }
 
-header nav li a i {
+header li a i {
   font-size: 2.5em;
   vertical-align: middle;
 }
@@ -66,4 +66,62 @@ header .dropmenu .dropcontent a {
 
 header .dropmenu .dropcontent li:hover {
   background-color: #B6ACD1;
+}
+
+/***** Sub-Navigation bar *****/
+nav {
+  font-size: 10px;
+  border-bottom: 1px solid #401F68;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 875px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+
+nav li {
+  float: left;
+  width: 175px;
+}
+
+nav li:hover {
+  background-color: #E4E0EE;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+nav li a i {
+  font-size: 4em;
+  vertical-align: middle;
+}
+
+/***** Main Content Styling *****/
+main {
+  margin-top: 100px;
+}
+
+p {
+  margin-left: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.smallText {
+  font-size: 10pt;
 }
