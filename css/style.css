@@ -71,23 +71,25 @@ header .dropmenu .dropcontent li:hover {
 /***** Sub-Navigation bar *****/
 nav {
   font-size: 10px;
-  border-bottom: 1px solid #401F68;
-  width: 100%;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0 auto;
-  width: 875px;
+  width: 100%;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: white;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #401F68;
 }
 
 nav li {
   float: left;
-  width: 175px;
+
+  vertical-align: middle;
 }
 
 nav li:hover {
