@@ -1,6 +1,6 @@
 article {
   border: 1px solid yellow;
-  width: 49%;
+  width: 59%;
   float: left;
 }
 
@@ -11,8 +11,8 @@ article img {
 
 figure {
   border: 1px solid indigo;
-  margin: 0 auto auto 50%;
-  width: 49%;
+  margin: 0 auto auto 60%;
+  width: 39%;
 }
 
 figure img {
@@ -22,4 +22,9 @@ figure img {
 figure figcaption {
   text-align: center;
   font-size: 8pt;
+}
+
+.logo {
+  width: 8%;
+  vertical-align: middle;
 }
