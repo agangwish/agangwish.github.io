@@ -4,6 +4,11 @@ article {
   float: left;
 }
 
+article img {
+  width: 85%;
+  padding: 0.5em auto 0.5em auto;
+}
+
 figure {
   border: 1px solid indigo;
   margin: 0 auto auto 50%;
@@ -16,5 +21,5 @@ figure img {
 
 figure figcaption {
   text-align: center;
-  font-size: 10pt;
+  font-size: 8pt;
 }
