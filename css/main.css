@@ -11,20 +11,21 @@ body {
 
 header {
   border: 1px solid red;
-  margin-left: 250px;
+  margin-left: 18%;
   height: 100px;
   padding: 1em;
+  text-align: center;
 }
 
 main {
   border: 1px solid blue;
-  margin-left: 250px;
+  margin-left: 18%;
   padding: 1em;
 }
 
 footer {
   border: 1px solid green;
-  margin-left: 250px;
+  margin-left: 18%;
   font-size: 6pt;
   padding: 1em;
 }
@@ -34,14 +35,14 @@ section {
   width: 100%;
   height: 100%;
   display: inline-block;
+  padding: 1em 0 0 0;
 }
 
 /***** Navigation Bar *****/
 nav {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 250px;
+  width: 18%;
   height: 100%;
   position: fixed;
   overflow: auto;
@@ -49,10 +50,53 @@ nav {
   top: 0;
 }
 
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1em;
+  text-align: center;
+}
+
+nav i {
+  font-size: 2.5em;
+  vertical-align: middle;
+}
+
+nav .dropcontent {
+  display: none;
+  font-size: 0.8em;
+}
+
+nav .active .dropcontent {
+  display: block;
+}
+
+nav .top {
+  padding: 3em 0 0 0;
+}
+
+nav .arrow {
+  font-size: 2em;
+}
+
+/***** Text Stylings *****/
 .bold {
   font-weight: bold;
 }
 
 .italic {
   font-style: italic;
+}
+
+.smallText {
+  font-size: 10pt;
 }
