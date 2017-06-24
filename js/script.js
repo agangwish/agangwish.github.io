@@ -1,11 +1,8 @@
-window.onscroll = function() {
-  scrollFunction()
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("top").style.display = "block";
-  } else {
-    document.getElementById("top").style.display = "none";
-  }
+function openNav() {
+    var x = document.getElementById("topNav");
+    if (x.className == " ") {
+        x.className = "show";
+    } else {
+        x.className = " ";
+    }
 }

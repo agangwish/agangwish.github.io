@@ -1,0 +1,42 @@
+/***** Navbar Styling *****/
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4E2A84;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  display: none;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav a, nav i {
+  color: white;
+}
+
+nav i {
+  font-size: 2em;
+}
+
+nav .icon {
+  display: block;
+  text-align: center;
+}
+
+nav.show a {
+  display: block;
+}
+
+/***** Main Body *****/
+main {
+  margin-top: 75px;
+}
