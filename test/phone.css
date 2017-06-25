@@ -1,22 +1,26 @@
 /***** Navbar Styling *****/
 nav {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #4E2A84;
+  width: 100%;
 }
 
 nav ul {
   list-style-type: none;
 }
 
+nav li {
+  margin-left: 30px;
+}
+
 nav a {
   display: none;
   text-align: left;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 1em;
+  padding: 0.75em 0em;
 }
 
 nav a, nav i {
@@ -27,7 +31,11 @@ nav i {
   font-size: 2em;
 }
 
-nav .menuIcon {
+nav .menuIcon, nav .closeMenuIcon {
+  margin-left: 0;
+}
+
+nav .menuIcon a, nav.show .closeMenuIcon a {
   display: block;
   text-align: center;
 }
@@ -36,13 +44,8 @@ nav.show a {
   display: block;
 }
 
-nav.show .menuIcon {
+nav.show .menuIcon a {
   display: none;
-}
-
-nav.show .closeMenuIcon {
-  display: block;
-  text-align: center;
 }
 
 /***** Main Body *****/
