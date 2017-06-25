@@ -3,8 +3,12 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #4E2A84;
-  width: 100%;
+  width: 100vw;
+  background: #401F68; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#401F68, #4E2A84); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#401F68, #4E2A84); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#401F68, #4E2A84); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#401F68, #4E2A84); /* Standard syntax */
 }
 
 nav ul {
@@ -20,7 +24,7 @@ nav a {
   text-align: left;
   text-decoration: none;
   font-size: 1em;
-  padding: 0.75em 0em;
+  padding: 0.75em 0;
 }
 
 nav a, nav i {
@@ -31,7 +35,7 @@ nav i {
   font-size: 2em;
 }
 
-nav .menuIcon, nav .closeMenuIcon {
+nav .menuIcon, nav.show .closeMenuIcon {
   margin-left: 0;
 }
 
@@ -46,9 +50,4 @@ nav.show a {
 
 nav.show .menuIcon a {
   display: none;
-}
-
-/***** Main Body *****/
-main {
-  margin-top: 75px;
 }

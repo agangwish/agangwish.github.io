@@ -4,8 +4,52 @@
   color: #401F68;
   margin: 0;
   padding: 0;
-  width: 99%;
 }
+
+h1, h2, h3, h4, p {
+  padding: 0.5em 0;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  margin-top: 60px;
+}
+
+main {
+  margin: 0 25px;
+}
+
+section {
+  padding-top: 50px;
+}
+
+article li {
+  margin-left: 25px;
+}
+
+footer {
+  font-size: 0.5em;
+  padding: 1em;
+}
+
+/***** Image Styling *****/
+
+article img {
+  width: 85%;
+}
+
+figure img {
+  width: 95%;
+  margin-top: 25px;
+}
+
+.logo {
+  width: 8%;
+  vertical-align: middle;
+}
+
+/***** Submenu Styling *****/
 
 .dropcontent {
   display: none;
@@ -15,11 +59,20 @@
   display: block;
 }
 
-header {
-  text-align: center;
-  padding: 1em;
+/***** Text Stylings *****/
+
+.bold {
+  font-weight: bold;
 }
 
-section {
-  padding-top: 50px;
+.italic {
+  font-style: italic;
+}
+
+.smallText {
+  font-size: 0.9em;
+}
+
+.subtitle {
+  padding: 0;
 }
