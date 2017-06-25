@@ -27,13 +27,22 @@ nav i {
   font-size: 2em;
 }
 
-nav .icon {
+nav .menuIcon {
   display: block;
   text-align: center;
 }
 
 nav.show a {
   display: block;
+}
+
+nav.show .menuIcon {
+  display: none;
+}
+
+nav.show .closeMenuIcon {
+  display: block;
+  text-align: center;
 }
 
 /***** Main Body *****/
