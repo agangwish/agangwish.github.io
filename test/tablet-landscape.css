@@ -1,3 +1,63 @@
-* {
-  background-color: yellow;
+/***** Navbar Styling *****/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18vw;
+  height: 100vh;
+  font-size: 0.8em;
+  background: #401F68; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#401F68, #4E2A84); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#401F68, #4E2A84); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#401F68, #4E2A84); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#401F68, #4E2A84); /* Standard syntax */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+nav a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.75em 0;
+}
+
+nav a, nav i {
+  color: white;
+}
+
+nav i {
+  font-size: 2em;
+}
+
+nav .menuIcon, nav .closeMenuIcon {
+  display: none;
+}
+
+header, main, footer {
+  margin-left: 22vw;
+}
+
+article {
+  float: left;
+  clear: left;
+  width: 49%;
+}
+
+figure {
+  width: 49%;
+  margin-left: 50%;
+}
+
+section {
+  display: inline-block;
+  width: 100%;
 }
