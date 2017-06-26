@@ -40,13 +40,22 @@ article img {
 }
 
 figure img {
-  width: 95%;
+  max-width: 95%;
   margin-top: 25px;
+  max-height: 75vh;
+}
+
+figure {
+  text-align: center;
 }
 
 .logo {
   width: 8%;
   vertical-align: middle;
+}
+
+hr {
+  border: 1px solid #401F68;
 }
 
 /***** Submenu Styling *****/
@@ -75,4 +84,9 @@ figure img {
 
 .subtitle {
   padding: 0;
+}
+
+figcaption {
+  font-size: 0.5em;
+  text-align: center;
 }

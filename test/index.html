@@ -90,6 +90,8 @@
               <li>Intro Robotics (BASIC STAMP 2 microcontroller)</li>
               <li>Robotics Lab (Python)</li>
               <li>Computer Architecture (VHDL)</li>
+              <li>Mechatronics (PIC32 Microcontroller system)</li>
+              <li>Embedded System Design and Synthesis</li>
             </ul>
           </li>
           <li>
@@ -188,27 +190,199 @@
     <section id="skills">
       <article>
         <h2>Skills</h2>
+        <ul class="smallText">
+          <li>
+            <span class="bold">Programming Languages:</span>
+            <ul class="italic">
+              <li>C, C++, C#</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>PHP, SQL</li>
+              <li>Objective-C</li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold">Operating Systems:</span>
+            <ul class="italic">
+              <li>Windows</li>
+              <li>Linux</li>
+              <li>OSX</li>
+              <li>iOS (with Objective-C)</li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold">Programs:</span>
+            <ul class="italic">
+              <li>Eagle PCB</li>
+              <li>Onshape CAD</li>
+              <li>MATLAB</li>
+              <li>VHDL</li>
+            </ul>
+          </li>
+        </ul>
       </article>
       <figure>
       </figure>
     </section>
     <section id="projects">
-      <article>
-        <p>Projects</p>
+      <h2>Projects</h2>
+      <article id="displayframe">
+        <h4>
+          <span class="bold">Personalizable Display Frame</span>
+          -- EECS 347-I,II
+        </h4>
+        <p>
+          <span class="bold">Goal:</span>
+          An internet-connected picture frame to allow users to customize otherwise impersonal
+          spaces such as a shared office or a hotel room, with remote management capabilities
+        </p>
+        <p>
+          <span class="bold">Overview:</span>
+          The key feature of the product is a management application that allows for remote
+          interaction by two different classes of users- primary users, who can upload the photos
+          they wish to be displayed; and secondary users, who own the frames and can manage which
+          user's photos will be displayed at a certain time.
+        </p>
+        <p>
+          <span class="bold">Design:</span>
+          There were two main aspects to our design: the controlling server and the display frame
+          itself. We used the following technologies to implement them:
+          <ul class="smallText">
+            <li>
+              <span class="bold">Server:</span>
+              <ul class="italic">
+                <li>Amazon Web Services Elastic Cloud Compute (server)</li>
+                <li>Amazon Web Services Relational Database Service (database)</li>
+                <li>PHP, mySQL (application back-end)</li>
+                <li>HTML, CSS, JavaScript (application front-end)</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Frame:</span>
+              <ul class="italic">
+                <li>Raspberry Pi 3 with monitor (frame)</li>
+                <li>Python script to read physical button inputs</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <p>
+          For a more detailed overview of this project, visit the
+          <a href="../projects/index.html#displayframe">Projects Page</a>
+          or check out the documents linked below.
+        </p>
+        <a href="../pdf/displayframe_spec.pdf">Specification Document</a>
+        <br />
+        <br />
+        <a href="../pdf/displayframe_final.pdf">Final Report</a>
       </article>
-      <figure>
+      <figure id="displayframe">
+        <img src="../images/personalizabledisplayframe.jpg"
+          alt="Personalizable Display Frame in action" title="Personalizable Display Frame"/>
+          <figcaption>Personalizable Display Frame on display at the NU Spring 2017 Internet of
+            Things Design Expo</figcaption>
       </figure>
+      <br />
+      <br />
+      <article id="pantiltzoom">
+        <h4>
+          <span class="bold">Pan-Tilt-Zoom Webcam</span>
+          -- Belobog Studios (EECS 495-I,II)
+        </h4>
+        <p>
+          <span class="bold">Goal:</span>
+          A custom pan-tilt-zoom webcam with remote observation and control via a web application
+        </p>
+        <p>
+          <span class="bold">Overview:</span>
+          The crucial part of this design was a custom 3D-printed zoom lens enclosure, designed for
+          use with a third-party smartphone-zoom lens. This was coupled with a PCB webcam of our
+          design and a remote server for control.
+        </p>
+        <p>
+          <span class="bold">Design:</span>
+          The major aspects of this design were the custom zoom enclosure, the embedded PCB, and the
+          remote server and application. We used the following technologies to implement them:
+          <ul class="smallText">
+            <li>
+              <span class="bold">Zoom Enclosure:</span>
+              <ul class="italic">
+                <li>Onshape CAD (3D model design)</li>
+                <li>Zortrax Z-Suite (3D printing preparation)</li>
+                <li>Zortrax M200 (3D printer)</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Webcam:</span>
+              <ul class="italic">
+                <li>Eagle PCB (PCB design)</li>
+                <li>ATSAM4S8b (microcontroller)</li>
+                <li>OV2640DS (camera)</li>
+                <li>AMW004 (WiFi module)</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Server:</span>
+              <ul class="italic">
+                <li>Raspberry Pi 3 with Apache (host)</li>
+                <li>HTML, CSS, JavaScript (application front-end)</li>
+                <li>NodeRED (application back-end)</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <p>
+          For a more detailed overview of this project, visit the
+          <a href="../projects/index.html#pantiltzoom">Projects Page</a>
+          or check out the report linked below.
+        </p>
+        <a href="../pdf/ptz_final.pdf">Final Report</a>
+      </article>
+      <figure id="pantiltzoom">
+        <img src="../images/lens_cross_section2.png"
+          alt="Zoom enclosure cross-section" title="Zoom enclosure cross-section"/>
+          <figcaption>Personalizable Display Frame on display at the NU Spring 2017 Internet of
+            Things Design Expo</figcaption>
+      </figure>
+      <br />
+      <br />
+      <article>
+        <p>
+          Please note that these represent two of my keystone projects at Northwestern. To see my
+          other projects (mechatronics, computer architecture, etc.), please visit the
+          <a href="../projects/index.html">Projects Page</a>.
+          </thead>
+        </p>
     </section>
     <section id="experience">
       <article>
-        <p>Additional Experience</p>
+        <h2>Additional Experience</h2>
+        <h4>
+          <span class="bold">Academic Mentoring Program</span>
+          -- Northwestern University, Fall 2016 - Spring 2017
+        </h4>
+        <p>
+          <span class="bold">Role:</span>
+          Peer Mentor (ECON 202)
+        </p>
+        <ul class="italic smallText">
+          <li>
+            Facilitated group tutoring sessions for an introductory Economics class
+          </li>
+          <li>
+            Improved leadership and public speaking skills in a group setting
+          </li>
+        </ul>
       </article>
       <figure>
       </figure>
     </section>
     <section id="pdf">
       <article>
-        <p>PDF</p>
+        <h2>PDF</h2>
+        <p>To view the one-page PDF version of my resume, please click
+        <a href="../pdf/resume.pdf">here</a>
       </article>
       <figure>
       </figure>

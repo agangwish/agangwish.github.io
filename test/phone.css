@@ -45,7 +45,7 @@ nav .menuIcon a, nav.show .closeMenuIcon a {
 }
 
 nav.show ul.topMenu {
-  height: 100vh;
+  height: 75vh;
   overflow-y: scroll;
 }
 
