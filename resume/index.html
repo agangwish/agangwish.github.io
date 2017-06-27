@@ -1,44 +1,42 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" media="(max-width:600px)" href="../css/phone.css">
+  <link rel="stylesheet" media="(min-width:601px) and (max-width:900px)" href="../css/tablet-portrait.css">
+  <link rel="stylesheet" media="(min-width:901px) and (max-width:1200px)" href="../css/tablet-landscape.css">
+  <link rel="stylesheet" media="(min-width:1201px)" href="../css/desktop.css">
   <link rel="stylesheet" type="text/css" href="../css/font/flaticon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <script type="text/javascript" src="../js/script.js"></script>
-  <title>Resume | Alex Gangwish</title>
 </head>
 <body>
-  <header>
-    <h1>Alex Gangwish</h1>
-    <h2>Resume</h2>
-  </header>
-  <nav>
-    <ul>
+  <nav id="myNav" class=" ">
+    <ul class="topMenu">
       <li>
         <a href="../index.html"><i class="flaticon-house"></i> Home </a>
       </li>
       <li class="active">
-        <a href="../resume/index.html"><i class="flaticon-resume"></i> Resume </a>
+        <a href="index.html"><i class="flaticon-resume"></i> Resume </a>
         <ul class="dropcontent">
           <li>
-            <a href="#pdf"><i class="flaticon-resume"></i> View PDF Version </a>
+            <a href="#pdf" onclick="openNav()"><i class="flaticon-resume"></i> View PDF Version </a>
           </li>
           <li>
-            <a href="#education"><i class="flaticon-graduation"></i> Education and Honors </a>
+            <a href="#education" onclick="openNav()"><i class="flaticon-graduation"></i> Education and Honors </a>
           </li>
           <li>
-            <a href="#work"><i class="flaticon-briefcase"></i> Work Experience </a>
+            <a href="#work" onclick="openNav()"><i class="flaticon-briefcase"></i> Work Experience </a>
           </li>
           <li>
-            <a href="#skills"><i class="flaticon-creativity"></i> Technical Skills </a>
+            <a href="#skills" onclick="openNav()"><i class="flaticon-creativity"></i> Technical Skills </a>
           </li>
           <li>
-            <a href="#projects"><i class="flaticon-folder"></i> Projects </a>
+            <a href="#projects" onclick="openNav()"><i class="flaticon-folder"></i> Projects </a>
           </li>
           <li>
-            <a href="#experience"><i class="flaticon-avatar"></i> Additonal Experience </a>
+            <a href="#experience" onclick="openNav()"><i class="flaticon-avatar"></i> Additonal Experience </a>
           </li>
         </ul>
       </li>
@@ -48,13 +46,20 @@
       <li>
         <a href="../contact/index.html"><i class="flaticon-email"></i> Contact </a>
       </li>
-      <li id="top">
-        <a href="#"> <span class="arrow">&uarr;</span> Top </a>
+      <li class="menuIcon">
+        <a href="javascript:void(0);" onclick="openNav()">&#9776; Menu</a>
+      </li>
+      <li class="closeMenuIcon">
+        <a href="javascript:void(0);" onclick="openNav()">&#9776; Close</a>
       </li>
     </ul>
   </nav>
+  <header>
+    <h1>Alex Gangwish</h1>
+    <hr>
+    <h2 class="subtitle">Resume</h2>
+  </header>
   <main>
-    <a id="education" />
     <section id="education">
       <article>
         <h2>Education and Honors</h2>
@@ -86,6 +91,8 @@
               <li>Intro Robotics (BASIC STAMP 2 microcontroller)</li>
               <li>Robotics Lab (Python)</li>
               <li>Computer Architecture (VHDL)</li>
+              <li>Mechatronics (PIC32 Microcontroller system)</li>
+              <li>Embedded System Design and Synthesis</li>
             </ul>
           </li>
           <li>
@@ -114,9 +121,14 @@
         <br />
         <h3>Honors</h3>
         <h4>
+          <img src="../images/HKNcrest.jpg" alt="Eta Kappa Nu Crest" title="HKN Crest"
+          class="logo"/>
           <span class="bold">Eta Kappa Nu</span>
           -- Beta Tau chapter
         </h4>
+        <p class="italic smallText">
+          The IEEE Honor Society for electrical and computer engineering
+        </p>
         <p>
           <span class="bold">Role:</span>
           Chapter President (2017 school year)
@@ -183,31 +195,259 @@
     </section>
     <section id="skills">
       <article>
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
+        <ul class="smallText">
+          <li>
+            <span class="bold">Programming Languages:</span>
+            <ul class="italic">
+              <li>C, C++, C#</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>PHP, SQL</li>
+              <li>Objective-C</li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold">Operating Systems:</span>
+            <ul class="italic">
+              <li>Windows</li>
+              <li>Linux</li>
+              <li>OSX</li>
+              <li>iOS (with Objective-C)</li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold">Programs:</span>
+            <ul class="italic">
+              <li>Eagle PCB</li>
+              <li>Onshape CAD</li>
+              <li>MATLAB</li>
+              <li>VHDL</li>
+              <li>Microsoft Office, Google Docs</li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold">Miscellaneous:</span>
+            <ul class="italic">
+              <li>PCB design</li>
+              <li>3D modeling and printing</li>
+              <li>Soldering (through-hole, surface mount, etc.)</li>
+            </ul>
+          </li>
+        </ul>
       </article>
       <figure>
+        <img src="../images/code.png" alt="Code stock photo"/>
       </figure>
     </section>
     <section id="projects">
+      <h2>Projects</h2>
+      <section id="displayframe">
       <article>
-        <p>Projects</p>
+        <h3>
+          <span class="bold">Personalizable Display Frame</span>
+          -- EECS 347-I,II
+        </h3>
+        <p>
+          <span class="bold">Goal:</span>
+          An internet-connected picture frame to allow users to customize otherwise impersonal
+          spaces such as a shared office or a hotel room, with remote management capabilities
+        </p>
+        <p>
+          <span class="bold">Overview:</span>
+          The key feature of the product is a management application that allows for remote
+          interaction by two different classes of users- primary users, who can upload the photos
+          they wish to be displayed; and secondary users, who own the frames and can manage which
+          user's photos will be displayed at a certain time.
+        </p>
+        <p>
+          <span class="bold">Design:</span>
+          There were two main aspects to our design: the controlling server and the display frame
+          itself. We used the following technologies to implement them:
+          <ul class="smallText">
+            <li>
+              <span class="bold">Server:</span>
+              <ul class="italic">
+                <li>Amazon Web Services Elastic Cloud Compute (server)</li>
+                <li>Amazon Web Services Relational Database Service (database)</li>
+                <li>PHP, mySQL (application back-end)</li>
+                <li>HTML, CSS, JavaScript (application front-end)</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Frame:</span>
+              <ul class="italic">
+                <li>Raspberry Pi 3 with monitor (frame)</li>
+                <li>Python script to read physical button inputs</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <p>
+          For a more detailed overview of this project, visit the
+          <a href="../projects/index.html#displayframe">Projects Page</a>
+          or check out the documents linked below.
+        </p>
+        <a href="../pdf/displayframe_spec.pdf" target="_blank">Specification Document</a>
+        <br />
+        <br />
+        <a href="../pdf/displayframe_final.pdf" target="_blank">Final Report</a>
       </article>
       <figure>
+        <img src="../images/personalizabledisplayframe.jpg"
+          alt="Personalizable Display Frame in action" title="Personalizable Display Frame"/>
+          <figcaption>Personalizable Display Frame on display at the NU Spring 2017 Internet of
+            Things Design Expo</figcaption>
       </figure>
+    </section>
+      <br />
+      <br />
+      <section id="pantiltzoom">
+      <article>
+        <h3>
+          <span class="bold">Pan-Tilt-Zoom Webcam</span>
+          -- Belobog Studios (EECS 495-I,II)
+        </h3>
+        <p>
+          <span class="bold">Goal:</span>
+          A custom pan-tilt-zoom webcam with remote observation and control via a web application
+        </p>
+        <p>
+          <span class="bold">Overview:</span>
+          The crucial part of this design was a custom 3D-printed zoom lens enclosure, designed for
+          use with a third-party smartphone-zoom lens. This was coupled with a PCB webcam of our
+          design and a remote server for control.
+        </p>
+        <p>
+          <span class="bold">Design:</span>
+          The major aspects of this design were the custom zoom enclosure, the embedded PCB, and the
+          remote server and application. We used the following technologies to implement them:
+          <ul class="smallText">
+            <li>
+              <span class="bold">Zoom Enclosure:</span>
+              <ul class="italic">
+                <li>Onshape CAD (3D model design)</li>
+                <li>Zortrax Z-Suite (3D printing preparation)</li>
+                <li>Zortrax M200 (3D printer)</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Webcam:</span>
+              <ul class="italic">
+                <li>Eagle PCB (PCB design)</li>
+                <li>ATSAM4S8b (microcontroller)</li>
+                <li>OV2640DS (camera)</li>
+                <li>AMW004 (WiFi module)</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Server:</span>
+              <ul class="italic">
+                <li>Raspberry Pi 3 with Apache (host)</li>
+                <li>HTML, CSS, JavaScript (application front-end)</li>
+                <li>NodeRED (application back-end)</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <p>
+          For a more detailed overview of this project, visit the
+          <a href="../projects/index.html#pantiltzoom">Projects Page</a>
+          or check out the report linked below.
+        </p>
+        <a href="../pdf/ptz_final.pdf" target="_blank">Final Report</a>
+      </article>
+      <figure>
+        <img src="../images/lens_cross_section2.png"
+          alt="Zoom enclosure cross-section" title="Zoom enclosure cross-section"/>
+          <figcaption>Cross Section of the custom zoom enclosure</figcaption>
+        <img src="../images/webcamPCB.jpg"
+          alt="Zoom enclosure cross-section" title="Zoom enclosure cross-section"/>
+          <figcaption>Embedded Webcam PCB</figcaption>
+      </figure>
+    </section>
+      <br />
+      <br />
+      <article>
+        <p>
+          Please note that these represent two of my keystone projects at Northwestern. To see my
+          other projects (mechatronics, computer architecture, etc.), please visit the
+          <a href="../projects/index.html">Projects Page</a>.
+          </thead>
+        </p>
     </section>
     <section id="experience">
       <article>
-        <p>Additional Experience</p>
+        <h2>Additional Experience</h2>
+        <h3>
+          <span class="bold">Design For America</span>
+          -- Northwestern University, Spring 2015 - Spring 2016
+        </h3>
+        <p>
+          <span class="bold">Role:</span>
+          Team Lead -- Fall 2015 - Spring 2016
+        </p>
+        <ul class="italic smallText">
+          <li>
+            Led a user-centered design team for two quarters, working with Evanston Cradle 2 Career
+            on a summer learning-loss prevention program
+          </li>
+          <li>
+            Improved team management and organization skills and gained experience in project
+            planning and iterative design
+          </li>
+        </ul>
+        <p>
+          <span class="bold">Role:</span>
+          Team Member -- Spring 2015 - Fall 2015
+        </p>
+        <ul class="italic smallText">
+          <li>
+            Worked on various design projects tackling social issues in the local Evanston
+            community
+          </li>
+          <li>
+            Collaborated with SitStayRead, a childhood literacy nonprofit group, to develop an
+            online reading program for low socioeconomic status children
+          </li>
+          <li>
+            Helped create AromAwake, a drowsy driver awareness and prevention system, as part of a
+            project sponsored by Fiat Chrysler Automobiles
+          </li>
+        </ul>
+        <br />
+        <br />
+        <h3>
+          <span class="bold">Academic Mentoring Program</span>
+          -- Northwestern University, Fall 2016 - Spring 2017
+        </h3>
+        <p>
+          <span class="bold">Role:</span>
+          Peer Mentor (ECON 202)
+        </p>
+        <ul class="italic smallText">
+          <li>
+            Facilitated group tutoring sessions for an introductory Economics class
+          </li>
+          <li>
+            Improved leadership and public speaking skills in a group setting
+          </li>
+        </ul>
       </article>
       <figure>
       </figure>
     </section>
     <section id="pdf">
       <article>
-        <p>PDF</p>
+        <h2>PDF</h2>
+        <p>To view the one-page PDF version of my resume, please click
+        <a href="../pdf/resume.pdf" target="_blank">here</a>
       </article>
       <figure>
       </figure>
+    </section>
+    <section class="whitespace">
     </section>
   </main>
   <footer>
@@ -216,4 +456,3 @@
       <a data-file="037-presentation-1" href="http://www.flaticon.com/authors/becris">Becris</a></p>
   </footer>
 </body>
-</html>
