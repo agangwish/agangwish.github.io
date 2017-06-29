@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" media="(max-width:600px)" href="../css/phone.css">
+  <link rel="stylesheet" media="(min-width:601px) and (max-width:900px)" href="../css/tablet-portrait.css">
+  <link rel="stylesheet" media="(min-width:901px) and (max-width:1200px)" href="../css/tablet-landscape.css">
+  <link rel="stylesheet" media="(min-width:1201px)" href="../css/desktop.css">
+  <link rel="stylesheet" type="text/css" href="../css/font/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+  <nav id="myNav" class=" ">
+    <ul class="topMenu">
+      <li>
+        <a href="../index.html"><i class="flaticon-house"></i> Home </a>
+      </li>
+      <li>
+        <a href="../resume/index.html"><i class="flaticon-resume"></i> Resume </a>
+      </li>
+      <li class="active">
+        <a href="index.html"><i class="flaticon-folder"></i> Project Portfolio </a>
+        <ul class="dropcontent">
+          <li>
+            <a href="#2017" onclick="openNav()"> 2017 </a>
+          </li>
+          <li>
+            <a href="#2016" onclick="openNav()"> 2016 </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="../contact/index.html"><i class="flaticon-email"></i> Contact </a>
+      </li>
+      <li class="menuIcon">
+        <a href="javascript:void(0);" onclick="openNav()">&#9776; Menu</a>
+      </li>
+      <li class="closeMenuIcon">
+        <a href="javascript:void(0);" onclick="openNav()">&#9776; Close</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Alex Gangwish</h1>
+    <hr>
+    <h2 class="subtitle">Projects</h2>
+  </header>
+  <main>
+    <section id="2017">
+      <h2>2017</h2>
+      <section id="displayframe">
+        <article>
+          <h3>
+            <span class="bold">Personalizable Display Frame</span> -- Internet of Things Picture Frame
+          </h3>
+          <p>
+            Personalizable Display Frame was created by Karan Shah and myself at the behest of a
+            third-party client during the course of EECS 347-I and II (Microprocessor System
+            Projects) at Northwestern University.
+          </p>
+          <p>
+            The goal of this project was to create an Internet-enabled picture frame, similar to
+            other products currently on the market, with an accompanying management web application.
+            The key feature of our product is a design targeting usage in nonpersonal spaces such as
+            a hotel room or a shared office-- users can add photos to the system via the application,
+            and then have their personal photos displayed when appropriate.
+          </p>
+          <p>
+            For example, a user planning to stay in a hotel that utilizes the Personalizable
+            Display Frame system could log into the application and upload a set of personal photos.
+            When the time comes for the user's stay in the hotel, the hotel manager simply accesses
+            the application and links the frame in the user's room to the user's profile. When the
+            user enters the room, the frame will already be displaying their pictures. All the users
+            need to do is add pictures, and all the managers need to do is choose which user's
+            pictures to show.
+          </p>
+          <p>
+            We used Amazon Web Services (specfically Elastic Cloud Compute and Relational Database
+            Service) to host our application in order to practice utilizing cloud services and to
+            simulate a system that could be easily expanded to larger scales as necessary.
+          </p>
+          <p>
+            We used the following technologies to implement our design:
+            <ul>
+              <li>
+                Web Application
+                <ul class="italic smallText">
+                  <li>
+                    Front end: HTML, CSS, JavaScript
+                  </li>
+                  <li>
+                    Back end: Apache server on a Linux cloud compute instance, PHP, mySQL
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Display Frame
+                <ul class="italic smallText">
+                  <li>
+                    Raspberry Pi 3 with HDMI monitor
+                  </li>
+                  <li>
+                    Push buttons with Python script listener for manual control
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <p>
+            For a more detailed overview of this project check out the documents linked below.
+          </p>
+          <a href="../pdf/displayframe_spec.pdf" target="_blank">Specification Document</a>
+          <br />
+          <br />
+          <a href="../pdf/displayframe_final.pdf" target="_blank">Final Report</a>
+          <br />
+          <br />
+          <a href="https://github.com/agangwish/Personalizable-Display-Frame" target="_blank">
+            View source code on GitHub
+          </a>
+        </article>
+        <figure>
+          <img src="../images/personalizabledisplayframe.jpg" alt="Personalizable Display Frame"
+            title="Personalizable Display Frame in action at the 2017 NU IOT Design Expo"/>
+        </figure>
+      </section>
+      <section id="pantiltzoom">
+        <article>
+          <h3>
+            <span class="bold">Pan-Tilt-Zoom Webcam</span> -- Embedded Systems Webcam
+          </h3>
+          <p>
+            Pan-Tilt-Zoom Webcam was created by Caleb Burton and myself during the course of EECS
+            495 Engineering System Design I and II at Northwestern University.
+          </p>
+          <p>
+            The goal of this project was to create a WiFi-enabled embedded systems webcam with an
+            accompanying web application for control and viewing, with additional emphasis placed
+            on physical design. There are three key components of this design: the embedded webcam,
+            the web application and server, and the custom 3D-printed zoom lens enclosure.
+          </p>
+          <p>
+            The embedded webcam was created using an ATSAM4S8b microcontroller with an OV2640DS
+            camera module and an AMW004 WiFi module, using a custom circular PCB design we created
+            using Eagle PCB. The web application and server were hosted on a Raspberry Pi 3, using a
+            NodeRED server for the back end and HTML, CSS, and JavaScript for the front end.
+          </p>
+          <p>
+            The custom zoom enclosure was designed in Onshape CAD to accomodate the circular PCB and
+            a third-party smartphone zoom lens. The PCB and base of the zoom lens sit in an
+            interior tube with a servo motor mounted on the back. This motor manipulates the outer
+            tube, which features two pressure screws that rotate the focus knob of the zoom lens
+            as the servo arms rotate. A mounting post allows the design to be fixed to a third
+            party pan-tilt servo base, providing three degrees of adjustment via the application.
+          </p>
+          <p>
+            For a more detailed overview of this project check out the report linked below.
+          </p>
+          <a href="../pdf/ptz_final.pdf" target="_blank">Final Report</a>
+        </article>
+        <figure>
+          <img src="../images/Poster.jpg" alt="Pan Tilt Zoom Webcam Poster"
+            title="Pan Tilt Zoom Webcam Poster" />
+        </figure>
+      </section>
+      <section>
+        <article>
+          <h3>
+            <span class="bold">This Website</span> -- Personal Resume Page
+          </h3>
+          <p>
+            I created this website for a few reasons: to host a more comprehensive version of my
+            resume, to showcase the projects I've worked on, and to practice my front-end web
+            development skills (particularly HTML, CSS, and JavaScript).
+          </p>
+          <p>
+            This website represents my first foray into responsive web design--while I've created
+            HTML pages with CSS styling before, they were mostly simple webpages designed for
+            desktop viewing. With this website I've been experimenting with adding custom stylings
+            to create a unique and appropriate view for users on a variety of different screens.
+          </p>
+          <p>
+            I plan to keep updating this website as I continue to expand my web development
+            skillset, and as I continue work on my personal projects.
+          </p>
+          <a href="https://github.com/agangwish/agangwish.github.io" target="_blank">
+            View source code on GitHub
+          </a>
+        </article>
+        <figure>
+          <img src="../images/responsive.jpg" alt="Responsive design examples"
+            title="My website on desktop, tablet, and phone" />
+        </figure>
+      </section>
+    </section>
+    <section id="2016">
+      <h2>2016</h2>
+      <section id="mechatronics">
+        <article>
+          <h3>
+            <span class="bold">Custom Servo Motor</span> -- Mechatronics Project
+          </h3>
+          <p>
+            This project was the capstone project for ME333 (Mechatronics) at Northwestern
+            University. The goal of the project was to utilize a microcontroller system to transform
+            a simple brushed DC motor into a 360&#176; servo motor capable of tracking complex
+            waveforms.
+          </p>
+          <p>
+            This project features a two-level feedback control system: an encoder feedback loop to
+            align motor position, and a current feedback loop to adjust the power to the motor.
+            The motor is controlled by a PIC32 microcontroller system with an external H-Bridge to
+            translate PWM signals from the PIC into appropriate DC motor control signals and a
+            current-sensor chip to read the current across the motor.
+          </p>
+          <p>
+            The motor's encoder sends the motor arm's current position to the PIC, which compares
+            the position to the desired set point and uses PID feedback control to subsequently
+            demand the current required to reach the set point. The current feedback loop reads the
+            current across the motor via the current sensor and uses PI feedback to adjust the duty
+            cycle of the PIC's PWM output until the demanded current is acheived.
+          </p>
+          <p>
+            Both feedback loops run on separate fixed-frequency interrupts. The program is designed
+            to communicate with a Matlab client program that allows a user to test and control the
+            motor. The motor can be given a set angle to rotate to or a waveform in the form of
+            several angles to rotate between, as seen in the "Position Control" image. Because the
+            system relies on feedback control, the motor is capable of operating as expected in any
+            orientation and with a variety of different armbars attached to the motor shaft.
+          </p>
+          <a href="https://github.com/agangwish/PID_Motor_Control" target="_blank">
+            View source code on GitHub
+          </a>
+        </article>
+        <figure>
+          <img src="../images/mechatronics.jpg" alt="Feedback Control Output Graphs"
+            title="Feedback Control Output Graphs" />
+        </figure>
+      </section>
+      <section id="architecture">
+        <article>
+          <h3>
+            <span class="bold">Custom VHDL Processor</span> -- Computer Architecture Project
+          </h3>
+          <p>
+            This project was completed by Jason Glass and myself for EECS 361
+            (Computer Architecture) at Northwestern University.
+          </p>
+          <p>
+            The goal of this project was to create a 32-bit reduced MIPS instruction set processor
+            from scratch in VHDL. There were three main stages: building a custom Arithmetic-Logic
+            Unit (ALU), building a custom single-cycle processor, and building a custom pipelined
+            processor.
+          </p>
+          <p>
+            The processor was designed to utilize our custom ALU alongside the requisite control
+            logic units, registers, etc. in order to read and execute a variety of binary
+            machine-language programs. The design of our single-cycle processor and a couple of
+            waveforms from the operation of said processor are included.
+          </p>
+          <a href="https://github.com/agangwish/EECS-361-Single-Cycle-CPU/blob/master/lib/alu32.vhd"
+            target="_blank">
+            View ALU source code on GitHub
+          </a>
+          <br />
+          <br />
+          <a href="https://github.com/agangwish/EECS-361-Single-Cycle-CPU" target="_blank">
+            View Single-Cycle CPU source code on GitHub
+          </a>
+          <br />
+          <br />
+          <a href="https://github.com/agangwish/Pipelined_Processor_EECS361" target="_blank">
+            View Pipelined CPU source code on GitHub
+          </a>
+        </article>
+        <figure>
+          <img src="../images/processor.png" alt="Our Processor Design"
+            title="Our Processor Design" />
+          <img src="../images/vhdl.png" alt="Processor Waveforms"
+            title="Processor Waveforms" />
+        </figure>
+      </section>
+    </section>
+    <section class="whitespace">
+    </section>
+  </main>
+  <footer>
+    <p>Font generated by <a href="http://www.flaticon.com">flaticon.com</a>.</p>
+    <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>:
+      <a data-file="037-presentation-1" href="http://www.flaticon.com/authors/becris">Becris</a></p>
+  </footer>
+</body>
