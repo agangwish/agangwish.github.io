@@ -329,7 +329,10 @@
         <p>
           <span class="bold">Design:</span>
           The major aspects of this design were the custom zoom enclosure, the embedded PCB, and the
-          remote server and application. We used the following technologies to implement them:
+          remote server and application. We experimented with using both websockets and RESTful
+          style throughout the course of the project--the final implementation relies on HTTP POST
+          to send our images to the server. We used the following technologies to implement our
+          prototype:
           <ul class="smallText">
             <li>
               <span class="bold">Zoom Enclosure:</span>
@@ -364,6 +367,11 @@
           or check out the report linked below.
         </p>
         <a href="../pdf/ptz_final.pdf" target="_blank">Final Report</a>
+        <br />
+        <br />
+        <a href="https://github.com/agangwish/Webcam-Project" target="_blank">
+          View source code on GitHub
+        </a>
       </article>
       <figure>
         <img src="../images/lens_cross_section2.png"

@@ -147,7 +147,10 @@
             The embedded webcam was created using an ATSAM4S8b microcontroller with an OV2640DS
             camera module and an AMW004 WiFi module, using a custom circular PCB design we created
             using Eagle PCB. The web application and server were hosted on a Raspberry Pi 3, using a
-            NodeRED server for the back end and HTML, CSS, and JavaScript for the front end.
+            NodeRED server for the back end and HTML, CSS, and JavaScript for the front end. We
+            experimented with using both websockets and a RESTful style during the course of our
+            project- our final code relies on HTTP POST to transfer images from the webcam to the
+            remote server.
           </p>
           <p>
             The custom zoom enclosure was designed in Onshape CAD to accomodate the circular PCB and
@@ -161,6 +164,11 @@
             For a more detailed overview of this project check out the report linked below.
           </p>
           <a href="../pdf/ptz_final.pdf" target="_blank">Final Report</a>
+          <br />
+          <br />
+          <a href="https://github.com/agangwish/Webcam-Project" target="_blank">
+            View source code on GitHub
+          </a>
         </article>
         <figure>
           <img src="../images/Poster.jpg" alt="Pan Tilt Zoom Webcam Poster"
